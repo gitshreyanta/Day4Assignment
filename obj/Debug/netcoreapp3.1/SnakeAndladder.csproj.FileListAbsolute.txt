@@ -1,0 +1,14 @@
+D:\demo\git\SnakeAndladder\bin\Debug\netcoreapp3.1\SnakeAndladder.exe
+D:\demo\git\SnakeAndladder\bin\Debug\netcoreapp3.1\SnakeAndladder.deps.json
+D:\demo\git\SnakeAndladder\bin\Debug\netcoreapp3.1\SnakeAndladder.runtimeconfig.json
+D:\demo\git\SnakeAndladder\bin\Debug\netcoreapp3.1\SnakeAndladder.runtimeconfig.dev.json
+D:\demo\git\SnakeAndladder\bin\Debug\netcoreapp3.1\SnakeAndladder.dll
+D:\demo\git\SnakeAndladder\bin\Debug\netcoreapp3.1\SnakeAndladder.pdb
+D:\demo\git\SnakeAndladder\obj\Debug\netcoreapp3.1\SnakeAndladder.csproj.AssemblyReference.cache
+D:\demo\git\SnakeAndladder\obj\Debug\netcoreapp3.1\SnakeAndladder.GeneratedMSBuildEditorConfig.editorconfig
+D:\demo\git\SnakeAndladder\obj\Debug\netcoreapp3.1\SnakeAndladder.AssemblyInfoInputs.cache
+D:\demo\git\SnakeAndladder\obj\Debug\netcoreapp3.1\SnakeAndladder.AssemblyInfo.cs
+D:\demo\git\SnakeAndladder\obj\Debug\netcoreapp3.1\SnakeAndladder.csproj.CoreCompileInputs.cache
+D:\demo\git\SnakeAndladder\obj\Debug\netcoreapp3.1\SnakeAndladder.dll
+D:\demo\git\SnakeAndladder\obj\Debug\netcoreapp3.1\SnakeAndladder.pdb
+D:\demo\git\SnakeAndladder\obj\Debug\netcoreapp3.1\SnakeAndladder.genruntimeconfig.cache
