@@ -10,48 +10,85 @@ namespace SnakeAndladder
         const int Ladder = 2;
         const int Snake = 3;
 
-        public void Game()
+        public void main()
         {
-            int count1 = 0;
-            int count2 = 0;
-            Random random = new Random();
-            int counter = 0;
+            int counter1 = 0;
+            int counter2 = 0;
+            bool flag1 = true;
+            bool flag2 = false;
 
-
-
-            while (count1 <= 100)
+            while (counter1 < 100 || counter2 < 100)
+            //while(i<10)
             {
+                Random random = new Random();
                 int dice = random.Next(1, 7);
                 int options = random.Next(1, 4);
-                bool flag1 = false;
-                bool flag2 = false; 
-                //Console.WriteLine("dice: {0} Options1: {1}", dice, options);
-                counter++;
-                if (count1 < 0)
-                {
-                    count1 = 0;
-                }
-
                 int prev_opt = options;
-
-                if (prev_opt == 2 && options == 2)
-                {
-
+                //Console.WriteLine("Options"+options);
+                //Console.WriteLine("Dice:" + dice);
+                if (counter1 < 0)
+                { 
+                    counter1 = 0;
                 }
+                if (counter2 < 0)
+                { 
+                    counter2 = 0;
+                }
+
+                if (flag1)
+                {
+                    int count1=Game(options, dice);
+                    counter1 = counter1 + count1 ;
+                    flag1 = false;
+                    flag2 = true;
+                    //Console.WriteLine("Counter1: "+counter1);
+                    
+                }
+                else if (flag2)
+                {
+                    int count2=Game(options, dice) ;
+                    flag2 = false;
+                    flag1 = true;
+                    counter2 = counter2 + count2;
+                    //Console.WriteLine("Counter2: " + counter2);
+                }
+
+                if (counter1 > 100 )
+                {
+                    Console.WriteLine("PLayer 1 is winner: Score "+counter1);
+                    break;
+                }
+                else if (counter2 > 100)
+                {
+                    Console.WriteLine("Player 2 is Winner: Score "+counter2);
+                    break;
+                }
+            }
+            
+        }
+
+
+        public int  Game(int options, int dice)
+        {
+            int count = 0;
+            //int counter = 0;
+                //Console.WriteLine("dice: {0} Options1: {1}", dice, options);
+               // counter++;
+                
                 switch (options)
                 {
                     case No_Play:
-                        count = count + 0;
+                        count = 0;
                         //Console.WriteLine("Player is not there");
                         break;
 
                     case Ladder:
-                        count = count + dice;
+                        count = dice;
                         break;
                     //Console.WriteLine("Player Climes");
 
                     case Snake:
-                        count = count - dice;
+                        count =  - dice;
                         //Console.WriteLine("Player Dies");
                         break;
 
@@ -59,18 +96,8 @@ namespace SnakeAndladder
                         //Console.WriteLine("wrong values");
                         break;
                 }
-
-                if (count > 100)
-                {
-                    count = count - dice;
-                }
-                else if (count == 100)
-                    break;
-
-                //Console.WriteLine(count);
-            }
-            Console.WriteLine("Current Count status: " + count);
-            Console.WriteLine("Number of times Dice Rolled: " + counter);
+            //Console.WriteLine("Count:" + count);
+            return count; 
 
 
         }
